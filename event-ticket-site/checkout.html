@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+    </nav>
+  </header>
+
+  <main>
+    <form onsubmit="handleCheckout(event)">
+      <label>Name: <input type="text" required /></label><br>
+      <label>Email: <input type="email" required /></label><br>
+      <label>Quantity: <input type="number" value="1" min="1" required /></label><br>
+      <button type="submit" class="btn">Confirm Purchase</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Event Tickets Inc.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
